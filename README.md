@@ -2,7 +2,7 @@
 
 **Dvorak++** is a [Dvorak keyboard layout](https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard) version optimized for writing code.
 
-It is based on the Programmer Dvorak layout with just one difference - instead of using a phone/ATM keypad-style numpad layout (1234567890) the traditional layout (7894561230) is used instead.
+It is based on the [Programmer Dvorak layout](http://www.kaufmann.no/roland/dvorak/) with just one difference - instead of using a phone/ATM keypad-style numpad layout (1234567890) the traditional layout (7894561230) is used instead.
 
 ## OS Support
 Currently only Windows is supported.
