@@ -14,8 +14,8 @@
 FriendlyName=Dvorak++
 ;<http://www.microsoft.com/technet/prodtechnol/ie/ieak/techinfo/deploy/60/en/iexpswit.mspx?mfr=true>
 SetupCommand="kbddpp-1_2_7-i386.exe" -q:a
-DisplayVersion=1.2.7
+DisplayVersion=0.1.0
 Publisher=Petr Klima
-URL=http://www.kaufmann.no/roland/dvorak/
+URL=https://github.com/pklima/DvorakPlusPlus
 LCID=1033
 Architecture=Intel

@@ -59,6 +59,7 @@ HKLM,%CCS%\Keyboard Layout\DosKeybCodes,%Variant%%CodePage%,,"dpp"
 HKLM,%Uninstall%\%Base%,,,
 HKLM,%Uninstall%\%Base%,DisplayName,,"%Description% %Revision%"
 HKLM,%Uninstall%\%Base%,Publisher,,"%Publisher%"
+HKLM,%Uninstall%\%Base%,URLInfoAbout,,"%URL%"
 HKLM,%Uninstall%\%Base%,UninstallString,,"rundll32.exe setupapi,InstallHinfSection DefaultUninstall 128 %17%\%Base%.INF"
 HKLM,%Uninstall%\%Base%,EstimatedSize,0x00010001,12 ; kilobytes
 HKLM,%Uninstall%\%Base%,NoModify,0x00010001,1
@@ -70,7 +71,8 @@ HKLM,%Cache%\%Base%,Changed,0x00010001,1
 [Strings]
 Description="Dvorak++"
 Publisher="Petr Klima"
-Revision="1.0.0"
+URL="https://github.com/pklima/DvorakPlusPlus"
+Revision="0.1.0"
 Base="kbddpp"
 Variant=1937
 CodePage=0409	; US
