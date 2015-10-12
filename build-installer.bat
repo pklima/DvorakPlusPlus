@@ -31,7 +31,7 @@ if /i not "%1"=="clean" (
    copy /y launcher.pdb launcher-!major!_!minor!_!build!.pdb
    copy /y kbddpp.zap kbddpp-!major!_!minor!_!build!.zap
 
-   set files=build-layout.bat build-installer.bat Makefile sources README.txt launcher.c
+   set files=build-layout.bat build-installer.bat Makefile sources README.md launcher.c
    for %%a in (c def inf mak rc reg sed zap) do set files=!files! kbddpp.%%a
 
    @copy /y NUL kbddpp-!major!_!minor!_!build!.ddf
