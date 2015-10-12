@@ -1,4 +1,4 @@
-/*
+﻿/*
 Copyright (c) 1997-2012 Roland Kaufmann. All rights reserved.
 Programmer Dvorak (tm) is a trademark of Roland Kaufmann.
 
@@ -612,7 +612,7 @@ static LDATA DEADKEY deadKeys[] = {
         { MAKELONG( L'o', L'~' ), 0x00F5, 0 },
         { MAKELONG( L'O', L'~' ), 0x00D5, 0 },
         { MAKELONG( L' ', L'~' ), L'~',   0 },
-        // diaeresis: �
+        // diaeresis: ¨
         { MAKELONG( L'a', 0x00a8 ), 0x00E4, 0 },
         { MAKELONG( L'e', 0x00a8 ), 0x00EB, 0 },
         { MAKELONG( L'i', 0x00a8 ), 0x00EF, 0 },
@@ -625,20 +625,20 @@ static LDATA DEADKEY deadKeys[] = {
         { MAKELONG( L'O', 0x00a8 ), 0x00D6, 0 },
         { MAKELONG( L'U', 0x00a8 ), 0x00DC, 0 },
         { MAKELONG( L' ', 0x00a8 ), 0x00A8, 0 },
-        // acute accent: �
-        { MAKELONG( L'a', 0x00b4 ), 0x00E1, 0 },
-        { MAKELONG( L'e', 0x00b4 ), 0x00E9, 0 },
-        { MAKELONG( L'i', 0x00b4 ), 0x00ED, 0 },
-        { MAKELONG( L'o', 0x00b4 ), 0x00F3, 0 },
-        { MAKELONG( L'u', 0x00b4 ), 0x00FA, 0 },
-        { MAKELONG( L'y', 0x00b4 ), 0x00FD, 0 },
-        { MAKELONG( L'A', 0x00b4 ), 0x00C1, 0 },
-        { MAKELONG( L'E', 0x00b4 ), 0x00C9, 0 },
-        { MAKELONG( L'I', 0x00b4 ), 0x00CD, 0 },
-        { MAKELONG( L'O', 0x00b4 ), 0x00D3, 0 },
-        { MAKELONG( L'U', 0x00b4 ), 0x00DA, 0 },
-        { MAKELONG( L'Y', 0x00b4 ), 0x00DD, 0 },
-        { MAKELONG( L' ', 0x00b4 ), 0x00B4, 0 },
+        // acute accent: ´
+        { MAKELONG( L'a', 0x00b4 ), 0x00E1, 0 }, // á
+        { MAKELONG( L'e', 0x00b4 ), 0x00E9, 0 }, // é
+        { MAKELONG( L'i', 0x00b4 ), 0x00ED, 0 }, // í
+        { MAKELONG( L'o', 0x00b4 ), 0x00F3, 0 }, // ó
+        { MAKELONG( L'u', 0x00b4 ), 0x00FA, 0 }, // ú
+        { MAKELONG( L'y', 0x00b4 ), 0x00FD, 0 }, // ý
+        { MAKELONG( L'A', 0x00b4 ), 0x00C1, 0 }, // Á
+        { MAKELONG( L'E', 0x00b4 ), 0x00C9, 0 }, // É
+        { MAKELONG( L'I', 0x00b4 ), 0x00CD, 0 }, // Í
+        { MAKELONG( L'O', 0x00b4 ), 0x00D3, 0 }, // Ó
+        { MAKELONG( L'U', 0x00b4 ), 0x00DA, 0 }, // Ú
+        { MAKELONG( L'Y', 0x00b4 ), 0x00DD, 0 }, // Ý
+        { MAKELONG( L' ', 0x00b4 ), 0x00B4, 0 }, // ´
         // grave accent: `
         { MAKELONG( L'a', L'`' ), 0x00E0, 0 },
         { MAKELONG( L'e', L'`' ), 0x00E8, 0 },
@@ -651,7 +651,7 @@ static LDATA DEADKEY deadKeys[] = {
         { MAKELONG( L'O', L'`' ), 0x00D2, 0 },
         { MAKELONG( L'U', L'`' ), 0x00D9, 0 },
         { MAKELONG( L' ', L'`' ), L'`',   0 },
-        // cedilla: �
+        // cedilla: ¸
         { MAKELONG( L'c', 0x00B8 ), 0x00E7, 0 },
         { MAKELONG( L'C', 0x00B8 ), 0x00C7, 0 },
         { MAKELONG( L'g', 0x00B8 ), 0x0123, 0 },
@@ -667,26 +667,26 @@ static LDATA DEADKEY deadKeys[] = {
         { MAKELONG( L't', 0x00B8 ), 0x0163, 0 },
         { MAKELONG( L'T', 0x00B8 ), 0x0162, 0 },
         { MAKELONG( L' ', 0x00B8 ), 0x00B8, 0 },
-        // caron:
-        { MAKELONG( L'c', 0x02C7 ), 0x010D, 0 },
-        { MAKELONG( L'C', 0x02C7 ), 0x010C, 0 },
-        { MAKELONG( L'd', 0x02C7 ), 0x010F, 0 },
-        { MAKELONG( L'D', 0x02C7 ), 0x010E, 0 },
-        { MAKELONG( L'e', 0x02C7 ), 0x011B, 0 },
-        { MAKELONG( L'E', 0x02C7 ), 0x011A, 0 },
-        { MAKELONG( L'n', 0x02C7 ), 0x0148, 0 },
-        { MAKELONG( L'N', 0x02C7 ), 0x0147, 0 },
-        { MAKELONG( L'r', 0x02C7 ), 0x0159, 0 },
-        { MAKELONG( L'R', 0x02C7 ), 0x0158, 0 },
-        { MAKELONG( L's', 0x02C7 ), 0x0161, 0 },
-        { MAKELONG( L'S', 0x02C7 ), 0x0160, 0 },
-        { MAKELONG( L't', 0x02C7 ), 0x0165, 0 },
-        { MAKELONG( L'T', 0x02C7 ), 0x0164, 0 },
-        { MAKELONG( L'u', 0x02C7 ), 0x01D4, 0 },
-        { MAKELONG( L'U', 0x02C7 ), 0x01D3, 0 },
-        { MAKELONG( L'z', 0x02C7 ), 0x017E, 0 },
-        { MAKELONG( L'Z', 0x02C7 ), 0x017D, 0 },
-        { MAKELONG( L' ', 0x02C7 ), 0x02C7, 0 },
+        // caron: ˇ
+        { MAKELONG( L'c', 0x02C7 ), 0x010D, 0 }, // č
+        { MAKELONG( L'C', 0x02C7 ), 0x010C, 0 }, // Č
+        { MAKELONG( L'd', 0x02C7 ), 0x010F, 0 }, // ď
+        { MAKELONG( L'D', 0x02C7 ), 0x010E, 0 }, // Ď
+        { MAKELONG( L'e', 0x02C7 ), 0x011B, 0 }, // ě
+        { MAKELONG( L'E', 0x02C7 ), 0x011A, 0 }, // Ě
+        { MAKELONG( L'n', 0x02C7 ), 0x0148, 0 }, // ň
+        { MAKELONG( L'N', 0x02C7 ), 0x0147, 0 }, // Ň
+        { MAKELONG( L'r', 0x02C7 ), 0x0159, 0 }, // ř
+        { MAKELONG( L'R', 0x02C7 ), 0x0158, 0 }, // Ř
+        { MAKELONG( L's', 0x02C7 ), 0x0161, 0 }, // š
+        { MAKELONG( L'S', 0x02C7 ), 0x0160, 0 }, // Š
+        { MAKELONG( L't', 0x02C7 ), 0x0165, 0 }, // ť
+        { MAKELONG( L'T', 0x02C7 ), 0x0164, 0 }, // Ť
+        { MAKELONG( L'u', 0x02C7 ), 0x01D4, 0 }, // ǔ
+        { MAKELONG( L'U', 0x02C7 ), 0x01D3, 0 }, // Ǔ
+        { MAKELONG( L'z', 0x02C7 ), 0x017E, 0 }, // ž
+        { MAKELONG( L'Z', 0x02C7 ), 0x017D, 0 }, // Ž
+        { MAKELONG( L' ', 0x02C7 ), 0x02C7, 0 }, // ˇ
         // circumflex accent: ^
         { MAKELONG( L'a', L'^' ), 0x00E2, 0 },
         { MAKELONG( L'e', L'^' ), 0x00EA, 0 },
@@ -801,7 +801,7 @@ static LDATA DEADKEY deadKeys[] = {
         { MAKELONG( L'+', math ), 0x00B1, 0 },  // plus-minus sign
         { MAKELONG( L'=', math ), 0x2248, 0 },  // almost equal to
         { MAKELONG( L'9', math ), 0x2260, 0 },  // not equal to
-        { MAKELONG( L'�', math ), 0x2261, 0 },  // identical to
+        { MAKELONG( L'£', math ), 0x2261, 0 },  // identical to
         { MAKELONG( L'2', math ), 0x0000, 0 },  // double arrow down
         { MAKELONG( L'4', math ), 0x0000, 0 },  // double arrow left
         { MAKELONG( L'6', math ), 0x0000, 0 },  // double arrow right
@@ -1166,20 +1166,20 @@ static LDATA VSC_LPWSTR extendedKeyNames[] = {
 // concatenate them with the name
 static LDATA LPWSTR deadKeyNames[] = {
         L"\x007E"       L"Tilde",                       // ~
-        L"\x00A8"       L"Diaeresis",                   // �
-        L"\x00B4"       L"Acute Accent",                // �
+        L"\x00A8"       L"Diaeresis",                   // ¨
+        L"\x00B4"       L"Acute Accent",                // ´
         L"\x0060"       L"Grave Accent",                // `
-        L"\x00B8"       L"Cedilla",                     // �
-        L"\x02C7"       L"Caron",
+        L"\x00B8"       L"Cedilla",                     // ¸
+        L"\x02C7"       L"Caron",                       // ˇ
         L"\x005E"       L"Circumflex Accent",           // ^
         L"\x0001"       L"Greek",
         L"\x0002"       L"Math",
         L"\x002F"       L"Stroke",
-        L"\x002A"       L"Ring Above",
+        L"\x002A"       L"Ring Above",                  // ˚
         L"\x02D9"       L"Dot Above",
-        L"\x02DD"       L"Double Acute Accent",
-        L"\x02C9"       L"Macron",
-        L"\x02D8"       L"Breve",
+        L"\x02DD"       L"Double Acute Accent",         // ˝
+        L"\x02C9"       L"Macron",                      // ¯
+        L"\x02D8"       L"Breve",                       // ˘
         NULL
 };
 
