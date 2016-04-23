@@ -896,8 +896,10 @@ static LDATA DEADKEY deadKeys[] = {
         { MAKELONG( L'Z',   0x00B4  ), 0x0179, 0        },
 
         // compose: Czech
-        { MAKELONG( L'u',   L'*'    ), 0x016F, 0        },      // u with ring above
-        { MAKELONG( L'U',   L'*'    ), 0x016E, 0        },
+        { MAKELONG( L'u',   L'*'    ), 0x016F, 0        },      // ů (u with ring above)
+        { MAKELONG( L'U',   L'*'    ), 0x016E, 0        },      // Ů (U with ring above)
+        { MAKELONG( L'u',   L'o'    ), 0x016F, 0        },      // ů (u with ring above)
+        { MAKELONG( L'U',   L'o'    ), 0x016E, 0        },      // Ů (U with ring above)
 
         // compose: Hungarian
         { MAKELONG( L'=',   compose ), 0x02DD, DKF_DEAD },      // double acute
