@@ -2,7 +2,7 @@
 Copyright (c) 1997-2012 Roland Kaufmann. All rights reserved.
 Programmer Dvorak (tm) is a trademark of Roland Kaufmann.
 
-Redistribution and use in source and binary forms, with or without modification, 
+Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
 
 1. Redistributions of source code must retain the above copyright notice, this
@@ -24,14 +24,14 @@ are permitted provided that the following conditions are met:
 5. Derivative work should be altered sufficiently to not conflict with the original
    if both are installed on a computer system.
 
-THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANTIES, 
-INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND 
-FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL ROLAND KAUFMANN 
-BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL 
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
-LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY 
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
+THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL ROLAND KAUFMANN
+BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 #define WIN32_LEAN_AND_MEAN
@@ -271,13 +271,13 @@ static LDATA VK_TO_WCHARS6 shiftCtrl[] = {
 // hexadecimal characters are available at alt positions. they
 // are written is capital, whereas the x is written in small as
 // is customary. 456 is considered the home row of the numpad. by
-// also putting the equal and dollar signs there, it can also be 
-// used in small spreadsheets where the column numbers are low! 
-// comma is available as an item separator (in code), colon for 
+// also putting the equal and dollar signs there, it can also be
+// used in small spreadsheets where the column numbers are low!
+// comma is available as an item separator (in code), colon for
 // entering times and ranges (in spreadsheets).
 // I would have preferred to have the hex chars in shift position,
 // but Windows automatically cancels NumLock when Shift is pressed.
-// decimal won't be available if AltGr is not specified since 
+// decimal won't be available if AltGr is not specified since
 // Ctrl-Alt-Del is intercepted on Windows anyhow!
 // note Windows regards the cursor keys as the main keys and then
 // does its own translation outside of the scancode to virtual key
@@ -345,18 +345,18 @@ static LDATA VK_TO_WCHAR_TABLE charTranslations[] = {
 
 #define none    0xFF
 
-// interpretation of the keyboard input: 
+// interpretation of the keyboard input:
 // scanCodesToVirtualKeys[ scanCode ] = virtualKey
 // if you want to switch the Ctrl and Caps Lock keys, switch VK_LCONTROL
 // (0x1D) and VK_CAPITAL (0x3A)
 // these must be flagged with either KBDEXT (extended key), KBDMULTIVK
 // (NumLock or Pause), KBDNUMPAD (numeric) or KBDSPECIAL (special processing).
-// for compatibility reasons with the original XT keyboard, Ctrl+NumLock is 
+// for compatibility reasons with the original XT keyboard, Ctrl+NumLock is
 // the same as Pause, and Ctrl+ScrollLock is the same as Break (VK_CANCEL)
 // see <http://blogs.msdn.com/oldnewthing/archive/2008/02/11/7596539.aspx>
 static LDATA USHORT scanCodesToVirtualKeys[] = {
         /* 0x00 */ none,
-        /* 0x01 */ VK_ESCAPE,           
+        /* 0x01 */ VK_ESCAPE,
         /* 0x02 */ VK_OEM_4,
         /* 0x03 */ VK_'7',
         /* 0x04 */ VK_'5',
@@ -1016,7 +1016,7 @@ static LDATA DEADKEY deadKeys[] = {
         // TODO: compose+letter should give a dead key that corresponds
         // to the ctrl+alt version of that letter, e.g. compose+a should
         // give dead aring, and dead aring+e should then give aelig.
-        
+
         // end of table
         0, 0
 };
@@ -1053,7 +1053,7 @@ static LDATA VSC_LPWSTR keyNames[] = {
         0x29    /* VK_OEM_3             */,     L"Dollar",
         0x2A    /* VK_LSHIFT            */,     L"Left Shift",
         0x2B    /* VK_OEM_5             */,     L"Backslash",
-        0x2C    /* VK_OEM_7             */,     L"Single Quote",        
+        0x2C    /* VK_OEM_7             */,     L"Single Quote",
         0x36    /* VK_RSHIFT            */,     L"Right Shift",
         0x37    /* VK_MULTIPLY          */,     L"Numeric *",
         0x38    /* VK_LMENU             */,     L"Alt",
