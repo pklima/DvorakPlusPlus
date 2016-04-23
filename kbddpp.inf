@@ -72,7 +72,7 @@ HKLM,%Cache%\%Base%,Changed,0x00010001,1
 Description="Dvorak++"
 Publisher="Petr Klima"
 URL="https://github.com/pklima/DvorakPlusPlus"
-Revision="0.1.0"
+Revision="0.1.1"
 Base="kbddpp"
 Variant=1937
 CodePage=0409	; US

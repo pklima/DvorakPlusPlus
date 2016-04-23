@@ -20,12 +20,12 @@ BEGIN
         BEGIN
             VALUE "FileDescription", "Dvorak++ Keyboard Layout\0"
             VALUE "CompanyName", "Petr Klima\0"
-            VALUE "FileVersion", "0.1.0\0"
+            VALUE "FileVersion", "0.1.1\0"
             VALUE "InternalName", "kbddpp\0"
             VALUE "LegalCopyright", "Copyright (C) 1997-2015 Roland Kaufmann\0"
             VALUE "OriginalFilename", "kbddpp.dll\0"
             VALUE "ProductName", "Dvorak++\0"
-            VALUE "ProductVersion", "0.1.0\0"
+            VALUE "ProductVersion", "0.1.1\0"
         END
     END
     BLOCK "VarFileInfo"

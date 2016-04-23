@@ -13,8 +13,8 @@
 [Application]
 FriendlyName=Dvorak++
 ;<http://www.microsoft.com/technet/prodtechnol/ie/ieak/techinfo/deploy/60/en/iexpswit.mspx?mfr=true>
-SetupCommand="kbddpp-1_2_7-i386.exe" -q:a
-DisplayVersion=0.1.0
+SetupCommand="kbddpp-0_1_1-i386.exe" -q:a
+DisplayVersion=0.1.1
 Publisher=Petr Klima
 URL=https://github.com/pklima/DvorakPlusPlus
 LCID=1033
